@@ -53,7 +53,8 @@ export function Gallery() {
 
   return (
     <div className="w-full mt-15">
-        <h2 className="mb-6 text-xl">Photo Gallery</h2>
+        <h2 className="mb-2 text-xl font-semibold">Photo Gallery</h2>
+        <p className="mb-6 text-sm">A collection of photos taken on my phone.</p>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4">
         {images.map((src: string, idx: number) => (
             <div
