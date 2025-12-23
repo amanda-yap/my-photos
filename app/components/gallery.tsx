@@ -45,8 +45,8 @@ export function Gallery() {
     const diff = touchStartX - touchEndX;
 
     if (Math.abs(diff) > 50) {
-      if (diff > 0) nextImage(); // swipe left → next
-      else prevImage();          // swipe right → prev
+        if (diff > 0) nextImage(); // swipe left → next
+        else prevImage();          // swipe right → prev
     }
     setTouchStartX(null);
   };
@@ -72,10 +72,8 @@ export function Gallery() {
         ))}
         </div>
 
-        {/* Modal */}
         {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4">
-            {/* Close Button */}
             <button
                 onClick={closeModal}
                 className="absolute top-4 right-4 sm:right-10 text-white text-5xl font-bold cursor-pointer"
@@ -83,7 +81,6 @@ export function Gallery() {
                 &times;
             </button>
 
-            {/* Prev Button - only on lg+ */}
             <button
                 onClick={prevImage}
                 className="hidden lg:flex absolute top-1/2 left-10 -translate-y-1/2 text-white text-5xl font-bold cursor-pointer p-4"
@@ -91,7 +88,6 @@ export function Gallery() {
                 &#10094;
             </button>
 
-            {/* Next Button - only on lg+ */}
             <button
                 onClick={nextImage}
                 className="hidden lg:flex absolute top-1/2 right-10 -translate-y-1/2 text-white text-5xl font-bold cursor-pointer p-4"
@@ -99,7 +95,6 @@ export function Gallery() {
                 &#10095;
             </button>
 
-            {/* Image - swipeable on mobile */}
             <div
                 className="relative w-full max-w-4xl h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]"
                 onTouchStart={handleTouchStart}
