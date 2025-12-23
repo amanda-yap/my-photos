@@ -59,7 +59,7 @@ export function Navbar() {
 					<div className="flex flex-col lg:flex-row flex-wrap lg:ml-0">
 						<button
 							onClick={() => setOpen(false)}
-							className="lg:hidden text-neutral-700 cursor-pointer ml-auto"
+							className="lg:hidden text-neutral-700 cursor-pointer ml-auto text-2xl"
 						>
 							✕
 						</button>

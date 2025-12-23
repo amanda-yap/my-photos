@@ -7,7 +7,7 @@ export default function Page() {
         Amanda Yap
       </h1>
       <p className="mb-4">
-        Welcome to my website! Here you will find a digital curation of the things I enjoy creating and consuming.
+        Welcome to my website! Here you will find a digital curation of the things I like to create and consume.
       </p>
       <Gallery />
     </section>
