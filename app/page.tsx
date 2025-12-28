@@ -7,7 +7,7 @@ return (
 		amanda
 		</h1>
 		<p className="mb-4">
-			Welcome to my website! Here you will find my random musings and various sorts of works.
+			Welcome to my website! Here you will find my random musings and various works.
 		</p>
 		<Gallery />
 	</section>

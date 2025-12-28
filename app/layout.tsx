@@ -18,7 +18,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-	title: "Amanda Yap",
+	title: "amanda",
 	description: "Personal Website",
 };
 
