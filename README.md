@@ -12,6 +12,4 @@ To run the app locally on your device, clone the repo and install the following 
 
 ```npm install gray-matter remark remark-html```
 
-```npm install @tailwindcss/typography```
-
 Then run the app using ```npm run dev```
