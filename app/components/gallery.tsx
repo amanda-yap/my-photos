@@ -4,16 +4,16 @@ import { useState } from "react";
 import Image from "next/image";
 
 const images: string[] = [
-  "/images/image1.JPG",
-  "/images/image2.JPG",
-  "/images/image4.JPG",
-  "/images/image6.JPG",
-  "/images/image17.JPG",
-  "/images/image25.JPG",
-  "/images/image27.JPG",
-  "/images/image28.JPG",
-  "/images/image30.JPG",
-  "/images/image31.JPG"
+    "/images/image1.JPG",
+    "/images/image2.JPG",
+    "/images/image4.JPG",
+    "/images/image6.JPG",
+    "/images/image17.JPG",
+    "/images/image25.JPG",
+    "/images/image27.JPG",
+    "/images/image28.JPG",
+    "/images/image30.JPG",
+    "/images/image31.JPG"
 ];
 
 export function Gallery() {
@@ -24,15 +24,10 @@ export function Gallery() {
     const openModal = (index: number) => {
         setCurrentIndex(index);
         setIsOpen(true);
-        // Disable y scrolling
-        document.body.style.overflowY = "hidden";
     };
 
-    const closeModal = () => {
-        setIsOpen(false);
-        // Enable y scrolling
-        document.body.style.overflowY = "";
-    };
+    const closeModal = () => setIsOpen(false);
+    
 
     const nextImage = () =>
         setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -79,7 +74,7 @@ export function Gallery() {
         </div>
 
         {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4 overscroll-contain touch-pan-x">
             <button
                 onClick={closeModal}
                 className="absolute top-4 right-4 sm:right-10 text-white text-5xl font-bold cursor-pointer"
