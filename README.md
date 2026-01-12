@@ -4,7 +4,7 @@ This is my personal website, which has the following features:
 * Interactive photo gallery
 * Markdown blog
 
-You can view my website on [amandasphotos.vercel.app](https://amandasphotos.vercel.app/)
+You can view my website on [amandasyaps.vercel.app](https://amandayaps.vercel.app/)
 
 To run the app locally on your device, clone the repo and install the following dependencies:
 
