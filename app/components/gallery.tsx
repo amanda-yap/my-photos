@@ -24,9 +24,15 @@ export function Gallery() {
     const openModal = (index: number) => {
         setCurrentIndex(index);
         setIsOpen(true);
+        // Disable y scrolling
+        document.body.style.overflowY = "hidden";
     };
 
-    const closeModal = () => setIsOpen(false);
+    const closeModal = () => {
+        setIsOpen(false);
+        // Enable y scrolling
+        document.body.style.overflowY = "";
+    };
 
     const nextImage = () =>
         setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -34,21 +40,21 @@ export function Gallery() {
     const prevImage = () =>
         setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
-  // Touch events for mobile swipe
+    // Touch events for mobile swipe
     const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
         setTouchStartX(e.touches[0].clientX);
   };
 
-  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (touchStartX === null) return;
-    const touchEndX = e.changedTouches[0].clientX;
-    const diff = touchStartX - touchEndX;
+    const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+        if (touchStartX === null) return;
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
 
-    if (Math.abs(diff) > 50) {
-        if (diff > 0) nextImage(); // swipe left → next
-        else prevImage();          // swipe right → prev
-    }
-    setTouchStartX(null);
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) nextImage(); // swipe left → next
+            else prevImage();          // swipe right → prev
+        }
+        setTouchStartX(null);
   };
 
   return (
@@ -58,9 +64,9 @@ export function Gallery() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4">
         {images.map((src: string, idx: number) => (
             <div
-            key={idx}
-            className="relative w-full aspect-[3/4] overflow-hidden rounded-lg cursor-pointer"
-            onClick={() => openModal(idx)}
+                key={idx}
+                className="relative w-full aspect-[3/4] overflow-hidden rounded-lg cursor-pointer"
+                onClick={() => openModal(idx)}
             >
             <Image
                 src={src}
