@@ -12,7 +12,7 @@ const images: string[] = [
     "/images/image25.JPG",
     "/images/image31.JPG",
     "/images/image30.JPG",
-    "/images/image24.JPG",
+    "/images/image23.JPG",
     "/images/image10.JPG",
     "/images/image27.JPG",
     "/images/image28.JPG"
