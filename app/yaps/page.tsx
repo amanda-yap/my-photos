@@ -6,7 +6,7 @@ export default function Yaps() {
 
 	return (
 		<main>
-		<h1 className="text-3xl font-semibold text-stone-900 mb-10">yaps</h1>
+			<h1 className="text-3xl font-semibold text-stone-900 mb-10">yaps</h1>
 			<ul className="space-y-4">
 				{yaps.map((yap) => (
 					<li key={yap.slug} className="border-l-2 border-stone-900 pl-2.5">
