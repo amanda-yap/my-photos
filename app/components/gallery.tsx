@@ -47,16 +47,16 @@ export function Gallery() {
         const diff = touchStartX - touchEndX;
 
         if (Math.abs(diff) > 50) {
-            if (diff > 0) nextImage(); // swipe left → next
-            else prevImage();          // swipe right → prev
+            if (diff > 0) nextImage(); // swipe left
+            else prevImage();          // swipe right
         }
         setTouchStartX(null);
     };
 
     return (
         <div className="w-full mt-15">
-            <h2 className="mb-2 text-xl font-semibold text-stone-900">Photo Gallery</h2>
-            <p className="mb-6 text-sm text-stone-900">A collection of photos taken on my phone.</p>
+            <h2 className="mb-2 text-xl font-semibold text-red-950">Photo Gallery</h2>
+            <p className="mb-6 text-sm text-stone-700">A collection of photos taken on my phone.</p>
             <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4">
             {images.map((src: string, idx: number) => (
                 <div

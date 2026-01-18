@@ -62,7 +62,7 @@ export function Navbar() {
 							key={path}
 							href={path}
 							onClick={() => setOpen(false)}
-							className="transition-all text-stone-900 py-2 px-3 m-1"
+							className="transition-transform text-stone-900 py-2 px-3 m-1 hover:scale-105"
 						>
 							{name}
 						</Link>
