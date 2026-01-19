@@ -55,13 +55,13 @@ export function Gallery() {
 
     return (
         <div className="w-full mt-15">
-            <h2 className="mb-2 text-xl font-semibold text-red-950">Photo Gallery</h2>
-            <p className="mb-6 text-sm text-stone-700">A collection of photos taken on my phone.</p>
+            <h2 className="mb-2 text-xl font-semibold text-red-950">photo gallery</h2>
+            <p className="mb-8 text-sm text-stone-700">A collection of photos taken on my phone :)</p>
             <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4">
             {images.map((src: string, idx: number) => (
                 <div
                     key={idx}
-                    className="relative w-full aspect-[3/4] overflow-hidden rounded-lg cursor-pointer"
+                    className="relative w-full aspect-[3/4] overflow-hidden cursor-pointer"
                     onClick={() => openModal(idx)}
                 >
                 <Image
