@@ -16,12 +16,12 @@ export default async function Yap({ params }: Props) {
 	const { slug } = await params;
 	const yap = await getYapBySlug(slug);
 	return (
-		<main>
+		<section>
 			<h1 className="text-2xl font-semibold text-red-950 mb-2">{yap.title}</h1>
 			<p className=" text-md text-stone-600 mb-6">{yap.date}</p>
 			<article className="prose">
 				<div dangerouslySetInnerHTML={{ __html: yap.content }} />
 			</article>
-		</main>
+		</section>
 	);
 }

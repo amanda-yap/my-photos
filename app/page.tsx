@@ -4,10 +4,12 @@ export default function Page() {
 	return (
 		<section>
 			<h1 className="mb-14 text-4xl font-semibold text-red-950 tracking-wide">
-			amanda yap<span className="text-amber-800">s</span>
+				amanda yap<span className="text-amber-800">s</span>
 			</h1>
 			<p className="text-stone-900">
-				Welcome to my website of random musings and various works.
+				Welcome to my website of random musings and various works - an online space to display my thoughts and creations.
+				
+				
 			</p>
 			<Gallery />
 		</section>

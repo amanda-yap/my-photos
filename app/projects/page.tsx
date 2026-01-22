@@ -12,7 +12,7 @@ const projects: Project[] = [
 		title: "artist portfolio",
 		description: "A display of art exhibitions and information on the artist.",
 		stack: ["Astro", "Tailwind"],
-		live_link: "https://artsd.netlify.app",
+		live_link: "https://artsd.vercel.app",
 		repo_link: "https://github.com/amanda-yap/art-portfolio"
 	},
 	{
@@ -24,7 +24,7 @@ const projects: Project[] = [
 	{
 		title: "personal website",
 		description: "An online space to share my works. You're already here!",
-		stack: ["Next.js", "Typescript", "Tailwind", "Vercel"],
+		stack: ["Next.js", "Typescript", "Tailwind"],
 		repo_link: "https://github.com/amanda-yap/personal-website",
 	},
 ];
@@ -41,7 +41,7 @@ export default function Projects() {
 						className="group border-l-2 border-yellow-900"
 					>
 						<div className="p-4">
-							<h3 className="mb-2 text-md font-medium text-red-950">
+							<h3 className="mb-2 text-lg font-medium text-red-950">
 								{project.title}
 							</h3>
 							<p className="text-sm text-stone-900 mb-4">

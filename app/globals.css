@@ -31,7 +31,7 @@ body {
 }
 
 .prose p {
-	@apply my-7 text-stone-900;
+	@apply mb-7 text-stone-900;
 }
 
 .prose h1 {
@@ -43,7 +43,7 @@ body {
 }
 
 .prose h3 {
-	@apply text-lg font-medium my-7;
+	@apply text-lg font-medium mt-7;
 }
 
 .prose strong {

@@ -5,14 +5,14 @@ export default function Yaps() {
 	const yaps = getAllYaps();
 
 	return (
-		<main>
+		<section>
 			<h1 className="text-3xl font-semibold text-red-950 mb-10">yaps</h1>
 			<ul className="space-y-4">
 				{yaps.map((yap) => (
-					<li key={yap.slug} className="border-l-2 border-stone-900 pl-2.5">
+					<li key={yap.slug} className="border-l-2 text-yellow-900 pl-2.5">
 						<Link
 							href={`/yaps/${yap.slug}`}
-							className="relative text-md text-semibold text-yellow-900 underline"
+							className="relative text-md font-medium text-yellow-900 underline"
 						>
 							{yap.title}
 						</Link>
@@ -20,6 +20,6 @@ export default function Yaps() {
 					</li>
 				))}
 			</ul>
-		</main>
+		</section>
 	);
 }
