@@ -7,7 +7,7 @@ export default function Page() {
 				amanda yap<span className="text-amber-800">s</span>
 			</h1>
 			<p className="text-stone-900">
-				Welcome to my website of random musings and various works - an online space to display my thoughts and creations.
+				Welcome to my website of various works - an online creative space.
 				
 				
 			</p>

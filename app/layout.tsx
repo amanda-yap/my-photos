@@ -12,8 +12,8 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-	title: "amanda yaps",
-	description: "amanda yap yaps",
+	title: "amanda projects",
+	description: "amanda yap projects",
 };
 
 export default function RootLayout({
