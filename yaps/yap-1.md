@@ -1,5 +1,5 @@
 ---
-title: "what am I yapping about?"
-date: "22-01-2026"
+title: "yap-1"
+date: "25-01-2026"
 ---
 
