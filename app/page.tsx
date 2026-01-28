@@ -3,14 +3,9 @@ import { Gallery } from "./components/gallery";
 export default function Page() {
 	return (
 		<section>
-			<h1 className="mb-14 text-4xl font-semibold text-red-950 tracking-wide">
-				amanda yap<span className="text-amber-800">s</span>
+			<h1 className="mb-6 text-4xl font-semibold text-red-950 tracking-wide">
+				amanda yap
 			</h1>
-			<p className="text-stone-900">
-				Welcome to my website of various works - an online creative space.
-				
-				
-			</p>
 			<Gallery />
 		</section>
 	)
